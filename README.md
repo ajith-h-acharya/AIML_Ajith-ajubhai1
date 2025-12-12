@@ -94,12 +94,12 @@ Notes are stored in `notes.json` in the following format:
 ]
 ```
 
-## Known Issues 🐛
+## Known Issues 
 
 - The edit function has spacing issues in the dictionary keys that may cause errors
 - Note IDs are based on list length, which may cause ID conflicts after deletions
 
-## Future Enhancements 🔮
+## Future Enhancements 
 
 - [ ] Add categories/tags for notes
 - [ ] Implement note timestamps
@@ -108,7 +108,7 @@ Notes are stored in `notes.json` in the following format:
 - [ ] Cloud sync capabilities
 - [ ] GUI version using tkinter
 
-## Contributing 🤝
+## Contributing 
 
 This project is part of the SOSC Challenge. Contributions, issues, and feature requests are welcome!
 
