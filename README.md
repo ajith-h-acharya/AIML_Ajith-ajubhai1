@@ -1,8 +1,8 @@
 # AIML_Ajith-ajubhai1
-# Personal Knowledge Vault 📝
+# Personal Knowledge Vault 
 
 
-## Features ✨
+## Features 
 
 - **Create Notes** - Add new notes with title and content
 - **View All Notes** - Display all stored notes at once
@@ -11,12 +11,12 @@
 - **Delete Notes** - Remove notes you no longer need
 - **Persistent Storage** - All notes are saved in `notes.json`
 
-## Prerequisites 📋
+## Prerequisites 
 
 - Python 3.x installed on your system
 - No external dependencies required (uses only standard library)
 
-## Installation 🚀
+## Installation 
 
 1. Clone this repository:
 ```bash
@@ -29,7 +29,7 @@ cd personal-knowledge-vault
 python notes_app.py
 ```
 
-## Usage 💡
+## Usage 
 
 When you run the application, you'll see a menu with 6 options:
 
@@ -70,7 +70,7 @@ PERSONAL KNOWLEDGE VAULT
 - Enter the ID of the note you want to delete
 - Confirm deletion
 
-## File Structure 📁
+## File Structure 
 
 ```
 personal-knowledge-vault/
@@ -80,7 +80,7 @@ personal-knowledge-vault/
 └── README.md           # This file
 ```
 
-## Data Storage 💾
+## Data Storage 
 
 Notes are stored in `notes.json` in the following format:
 
@@ -118,19 +118,4 @@ This project is part of the SOSC Challenge. Contributions, issues, and feature r
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License 📄
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## Author ✍️
-
-Created for the SOSC (SAHYADRI Open-Source Community) Challenge
-
-## Acknowledgments 🙏
-
-- SOSC Community for organizing the challenge
-- Python community for excellent documentation
-
----
-
-⭐ Star this repository if you find it helpful!
