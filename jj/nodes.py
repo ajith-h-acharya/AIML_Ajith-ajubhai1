@@ -28,9 +28,9 @@ def create_note(notes):
 
 def view_notes(notes):
     if not notes:
-        print("\nNo notes available!")
+        print(" No notes available!")
         return
-    print("\n--- All Notes ---")
+    print("--- All Notes ---")
     for note in notes:
         print(f"\nID: {note['id']}")
         print(f"Title: {note['title']}")
@@ -64,33 +64,33 @@ def edit_note(notes):
         note_id = int(input("\nEnter note ID to edit: "))
         for note in notes:
             if note["id"] == note_id:
-                print(f"Current title: {note['title']}")
-                note["title"] = input("New title: ")
-                print(f"Current content: {note['content']}")
-                note["content"] = input("New content: ")
+                print(f" Current title: {note['title']} ")
+                note[" title "] = input(" New title : ")
+                print(f" Current content: {note['content']}")
+                note[" content "] = input("New content: ")
                 save_notes(notes)
-                print("Note updated successfully!")
+                print(" Note updated successfully ! ")
                 return
-        print("Note ID not found!")
+        print("  Note ID not found ! ")
     except ValueError:
-        print("Invalid ID!")
+        print(" Invalid ID ! ")
 
 def delete_note(notes):
     if not notes:
-        print("\nNo notes to delete!")
+        print("\n No notes to delete ! ")
         return
     
     try:
-        note_id = int(input("\nEnter note ID to delete: "))
+        note_id = int(input("\n Enter note ID to delete : "))
         for i in range(len(notes)):
             if notes[i]["id"] == note_id:
                 deleted = notes.pop(i)
                 save_notes(notes)
                 print(f"Note '{deleted['title']}' deleted!")
                 return
-        print("Note ID not found!")
+        print("  Note ID not found ! ")
     except ValueError:
-        print("Invalid ID!")
+        print(" Invalid ID ! ")
 
 def main():
     notes = load_notes()
@@ -99,31 +99,32 @@ def main():
         print("\n" + "="*40)
         print("PERSONAL KNOWLEDGE VAULT")
         print("="*40)
-        print("1. Create Note")
+        print("1. Creating Note")
         print("2. View All Notes")
-        print("3. Search Notes")
+        print("3. Search for  Notes")
         print("4. Edit Note")
         print("5. Delete Note")
-        print("6. Exit")
+        print("6. Exiting the program")
         print("="*40)
         
-        choice = input("\nEnter your choice (1-6): ")
+        choose = input("\nEnter your choice from (1-6): ")
         
-        if choice == "1":
+        if choose == "1":
             create_note(notes)
-        elif choice == "2":
+        elif choose == "2":
             view_notes(notes)
-        elif choice == "3":
+        elif choose == "3":
             search_notes(notes)
-        elif choice == "4":
+        elif choose == "4":
             edit_note(notes)
-        elif choice == "5":
+        elif choose == "5":
             delete_note(notes)
-        elif choice == "6":
-            print("\nThank you for using Knowledge Vault!")
+        elif choose == "6":
+            print("Thank you for using Knowledge Vault!")
             break
         else:
-            print("\nInvalid choice! Please enter 1-6.")
+            print("\nInvalid choice! Please enter (1-6).")
 
 if __name__ == "__main__":
+
     main()
